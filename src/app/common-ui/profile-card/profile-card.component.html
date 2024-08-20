@@ -1,18 +1,20 @@
 @if (profile) {
   <div class="profile-card">
     <div class="avatar-name">
-      <img src="/assets/images/avatar.jpg" alt="avatar" class="profile-card__avatar">
+      <img
+        [src]="profile.avatarUrl | imgUrl"
+        alt="avatar"
+        class="profile-card__avatar"
+      >
       <div class="profile-card__name">
         <strong class="h6">{{ profile.firstName }} {{ profile.lastName }}</strong>
         <span>{{ profile.username }}</span>
       </div>
     </div>
-    <div class="profile-card__description">
-      Райан Томас Гослинг (англ. Ryan Thomas Gosling, род. 12 ноября 1980, Лондон, Онтарио, Канада) — канадский актёр. Известен по ролям в независимых фильмах и крупных студийных проектах разных жанров. Сборы фильмов с его участием составили свыше 1,9 миллиарда долларов.
-    </div>
+    <div class="profile-card__description">{{ profile.description }}</div>
     <div class="profile-card__tags">
       @for(skill of profile.stack; track skill) {
-        <div class="skill-tag">Angular</div>
+        <div class="skill-tag">{{ skill }}</div>
       }
     </div>
     <div class="profile-card__action-btns">
