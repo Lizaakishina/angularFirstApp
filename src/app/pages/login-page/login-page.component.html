@@ -1,7 +1,7 @@
 <form
   class="lofin-form"
   [formGroup]="form"
-  (ngSubmit)="onSubmit($event)"
+  (ngSubmit)="onSubmit()"
 >
   <h1 class="h1 m60">Вход</h1>
   <label class="tt-control-label m16">
@@ -9,8 +9,8 @@
     <input formControlName="username" class="tt-input" type="text" placeholder="Введите логин">
   </label>
   <label class="tt-control-label m32">
-    Passsword
-    <input formControlName="passsword" class="tt-input" type="text" placeholder="Введите пароль">
+    Password
+    <input formControlName="password" class="tt-input" type="text" placeholder="Введите пароль">
   </label>
   <button class="button button-shadow" type="submit">Войти</button>
 </form>
