@@ -1,1 +1,16 @@
-<p>sidebar works!</p>
+<nav>
+  <ul class="main-menu-list">
+    <li *ngFor="let menuItem of menuItems">
+      <button class="menu-item">
+        <div class="menu-item__img"></div>
+        <span>{{ menuItem.label }}</span>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<p class="medium-text">Подписчики</p>
+
+<div class="to-subscribers">
+  <a [routerLink]="['/subscribers']" class="to-subscribers-link medium-text">Все подписчики &#8594;</a>
+</div>

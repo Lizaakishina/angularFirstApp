@@ -6,6 +6,7 @@
   --light-color: #FFF;
   --primary-color: #AE7AFF;
   --grey-color: #5F6440;
+  --dark-hover-color: #404040;
 }
 
 *,
@@ -96,4 +97,13 @@ body {
   font-weight: 400;
   font-family: "JetBrains Mono";
   color: var(--light-color);
+}
+
+.medium-text {
+  margin-top: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 10px;
 }
