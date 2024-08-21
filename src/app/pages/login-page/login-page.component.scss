@@ -4,5 +4,27 @@
   height: 100dvh;
   align-items: center;
   margin: 0 25%;
-  width: 50%;
+}
+
+.login-form {
+  width: 440px;
+  place-self: center;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-eye-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 53%;
+  right: 12px;
+  cursor: pointer;
+}
+
+.password-eye-btn.active {
+  background-color: var(--primary-color);
 }
